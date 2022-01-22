@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from netmiko import ConnectHandler
 import time
 
@@ -6,7 +8,7 @@ day = time.strftime('%d')
 month = time.strftime('%m')
 year = time.strftime('%Y')
 today = month + "_" + day + "_" + year
-# initialising device
+# initializing device
 device = {
     'device_type': 'alcatel_sros',
     'ip': '192.168.100.254',
